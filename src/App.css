@@ -1,5 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Windows Command Prompt';
+  src: url('./font/Windows-Command-Prompt.woff2') format('woff2'),
+      url('./font/Windows-Command-Prompt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+div {
+ font-family: "Windows Command Prompt";
+}
 .App {
   text-align: center;
+  font-family: "Windows Command Prompt";
 }
 
 .App-logo {
