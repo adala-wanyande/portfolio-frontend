@@ -1,9 +1,9 @@
 import React from 'react'
-import Bio from './components/Bio';
+import InternalNavigationBar from './components/InternalNavigationBar'
 import "./App.css"
 
 const App = () => {
-  return <Bio></Bio>
+  return <InternalNavigationBar/>
 }
 
 export default App;
