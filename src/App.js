@@ -1,9 +1,15 @@
 import React from 'react'
-import Socials from './components/Socials'
+import NavigationBar from './components/NavigationBar'
+import Container from './components/Container'
 import "./App.css"
 
 const App = () => {
-  return <Socials/>
+  return (
+      <>
+        <NavigationBar/>
+        <Container/>
+      </>
+  )
 }
 
 export default App;
