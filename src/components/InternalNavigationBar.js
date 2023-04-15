@@ -2,7 +2,7 @@ import React from 'react'
 
 const InternalNavigationBar = () => {
   return (
-    <div className= "px-16 mt-8">
+    <div className= "px-4 mt-8">
       <ul className="text-gray-700">
         <li>
           <a href="#work-history" class="block py-2 hover-underline-animation">Work History</a>

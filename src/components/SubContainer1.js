@@ -5,7 +5,7 @@ import Socials from './Socials'
 
 const SubContainer1 = () => {
   return (
-    <div className='md:sticky md:top-0 max-w-screen-md flex flex-col justify-start pt-8'>
+    <div className='md:sticky md:top-0 md:h-screen max-w-screen-md flex flex-col justify-start pt-8'>
       <Bio></Bio>
       <InternalNavigationBar></InternalNavigationBar>
       <Socials></Socials>

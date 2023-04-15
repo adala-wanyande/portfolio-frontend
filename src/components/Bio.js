@@ -2,12 +2,12 @@ import React from 'react'
 
 const Bio = () => {
   return (
-    <div className='px-16 mt-4'>
+    <div className='px-4 mt-4'>
       <div className=''>
         <h2 class="text-4xl font-extrabold dark:text-white">Hi, my name is <span class="text-blue-600 dark:text-blue-500">Adala</span> Wanyande.</h2>
       </div>
       <div className='mt-4'>
-        <p className='text-gray-500 text-base'>I'm a rookie software developer with a strong inclination for frontend technologies, especially React. I enjoy getting my hands dirty with frontend development and I have a preference for creating visually appealing wireframes and mockups using Figma. There's nothing quite like the rush of seeing my designs come to life through web development! As a man who's just starting out in this exciting field, I can't wait to see what the future has in store for me and my frontend development career.</p>
+        <p className='text-gray-500 text-base'>I'm a software developer with a strong inclination for frontend technologies, especially React. I enjoy getting my hands dirty with frontend development and I have a preference for creating visually appealing wireframes and mockups using Figma. There's nothing quite like the rush of seeing my designs come to life through web development! As a man who's just starting out in this exciting field, I can't wait to see what the future has in store for me and my development career.</p>
       </div>
     </div>
   )
