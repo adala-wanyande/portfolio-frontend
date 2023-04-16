@@ -19,9 +19,9 @@ const Socials = () => {
         </a>
       </div>
       <div className='flex justify-center'>
-        <a href="mailto:benardwanyande@gmail.com">
+        <a href="mailto:awanyande@gmail.com">
             <svg className="w-[48px] fill-[#262626] hover:fill-blue-600" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <title>benardwanyande@gmail.com</title>
+            <title>awanyande@gmail.com</title>
             <path d="M17.187 19.181L24 4.755 0 12.386l9.196 1.963.043 4.896 2.759-2.617-2.147-2.076 7.336 4.63z"></path>
             </svg>
         </a>

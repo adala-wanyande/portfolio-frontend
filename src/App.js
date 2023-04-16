@@ -1,11 +1,11 @@
 import React from 'react'
-import Container from './components/Container'
+import MainContainer from './components/MainContainer'
 import "./App.css"
 
 const App = () => {
   return (
       <>
-        <Container/>
+        <MainContainer/>
       </>
   )
 }

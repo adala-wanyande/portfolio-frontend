@@ -2,19 +2,19 @@ import React from 'react'
 
 const InternalNavigationBar = () => {
   return (
-    <div className= "px-4 mt-8">
+    <div className="px-4 mt-8">
       <ul className="text-gray-700">
         <li>
-          <a href="#work-history" class="block py-2 hover-underline-animation">Work History</a>
+          <a href="#work-history" className="block py-2 hover-underline-animation">Work History</a>
         </li>
         <li>
-          <a href="#projects" class="block-4 py-2 hover-underline-animation">Projects</a>
+          <a href="#projects" className="block-4 py-2 hover-underline-animation">Projects</a>
         </li>
         <li>
-          <a href="#" class="block py-2 hover-underline-animation">Skills</a>
+          <a href="#skills" className="block py-2 hover-underline-animation">Skills</a>
         </li>
         <li>
-          <a href="#" class="block py-2 hover-underline-animation">Blog</a>
+          <a href="#blogs" className="block py-2 hover-underline-animation">Blogs</a>
         </li>
       </ul>
     </div>
