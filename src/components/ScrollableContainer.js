@@ -32,14 +32,15 @@ const dummyProjects = [
 const dummyBlogs = [
   {
     title: "My Journey as a Software Developer Starts",
-    teaserContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    teaserContent: "Thinking about a career in software development? Here's why you should take the leap and start your journey!",
     coverImage: 'assets/Blog/my-software-journey.avif',
     link: "https://dev.to/benard-dev"
   },
   {
-    title: "My Journey as a Software Developer Starts",
-    teaserContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    coverImage: 'assets/Blog/my-software-journey.avif',
+    title: "Why Github Streaks Matter",
+    // Generate for me teaser content for the blog post
+    teaserContent: "Discover why maintaining a Github streak can be beneficial for your coding journey.",
+    coverImage: 'assets/Blog/streaks.png',
     link: "https://dev.to/benard-dev"
   }
 ]
