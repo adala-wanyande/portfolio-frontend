@@ -24,7 +24,7 @@
     "blogs": [
         {
             "title": "My Journey as a Software Developer Starts",
-            "teaserContent": "Thinking about a career in software development? Here's why you should take the leap and start your journey!",
+            "teaserContent": "So, I have been coding relentlessly for the past three months, and I've been able to see some significant progress. Just check out this Github contribution graph. Isn't it beautiful? Especially considering it's just April...",
             "coverImage": "assets/Blog/streaks.png",
             "link": "https://dev.to/benard-dev"
         }
