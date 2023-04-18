@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import StickyContainer from './StickyContainer'
-import ScrollableContainer from './ScrollableContainer'
+import StickyContainer from './components/StickyContainer'
+import ScrollableContainer from './components/ScrollableContainer'
 import "./App.css"
 
 const App = () => {
@@ -9,19 +9,19 @@ const App = () => {
   const [workHistory, setWorkHistory] = useState([])
 
   useEffect(() => {
-    fetch('https://localhost:4000/projects')
+    fetch('http://localhost:4000/projects')
       .then(response => response.json())
       .then(data => setProjects(data))
   }, [])
 
   useEffect(() => {
-    fetch('https://localhost:4000/blogs')
+    fetch('http://localhost:4000/blogs')
       .then(response => response.json())
       .then(data => setBlogs(data))
   }, [])
 
   useEffect(() => {
-    fetch('https://localhost:4000/work-history')
+    fetch('http://localhost:4000/work-history')
       .then(response => response.json())
       .then(data => setWorkHistory(data))
   }, [])
