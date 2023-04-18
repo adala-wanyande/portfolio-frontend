@@ -4,8 +4,8 @@ const Bio = () => {
   return (
     <div className='px-4 mt-4'>
       <div>
-        <h2 className="text-4xl font-extrabold dark:text-white max-w-lg">
-          Hi, my name is <span className="text-blue-600 dark:text-blue-500">Adala</span> Wanyande.
+        <h2 className="text-4xl font-extrabold max-w-lg">
+          Hi, my name is <span className="text-blue-600">Adala</span> Wanyande.
         </h2>
       </div>
       <div className='mt-4 max-w-lg'>
