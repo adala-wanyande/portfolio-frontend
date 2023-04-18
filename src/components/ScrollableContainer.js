@@ -41,9 +41,9 @@ const ScrollableContainer = ({projects, blogs, workHistory}) => {
       {renderWorkHistory}
       <Subtitle text='Projects' id="projects"></Subtitle>
       {renderProjects}
-      <div className="flex justify-end mx-4">
+      {/* <div className="flex justify-end mx-4">
         <NavigationButton buttonText="View All Projects" link="https://dev.to/benard-dev"></NavigationButton>
-      </div>
+      </div> */}
       <Subtitle text='Skills' id="skills"></Subtitle>
       <Skill></Skill>
       <Subtitle text='Blogs' id="blogs"></Subtitle>
