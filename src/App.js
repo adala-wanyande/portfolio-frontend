@@ -1,12 +1,14 @@
 import React from 'react'
-import MainContainer from './components/MainContainer'
+import StickyContainer from './StickyContainer'
+import ScrollableContainer from './ScrollableContainer'
 import "./App.css"
 
 const App = () => {
   return (
-      <>
-        <MainContainer/>
-      </>
+    <div className="flex flex-col md:flex-row w-full justify-center">
+      <StickyContainer/>
+      <ScrollableContainer/>
+    </div>
   )
 }
 
