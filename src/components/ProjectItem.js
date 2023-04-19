@@ -14,9 +14,9 @@ const ProjectItem = ({ projectObject }) => {
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
           {projectObject.title}
         </h5>
-        <h6 className="mb-2 text-lg font-bold tracking-tight text-gray-500">
+        {/* <h6 className="mb-2 text-lg font-bold tracking-tight text-gray-500">
           {projectObject.skills[0]}, {projectObject.skills[1]}
-        </h6>
+        </h6> */}
         <p className="mb-2 text-sm text-gray-600 min-w-[250px]">
           {projectObject.description}
         </p>
