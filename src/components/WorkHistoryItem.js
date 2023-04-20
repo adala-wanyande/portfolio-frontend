@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WorkHistoryItem = ({workHistoryObject, index}) => {
+const WorkHistoryItem = ({workHistoryObject, index, formatDate}) => {
   return (     
     <div key={index} id="work-history" className="max-w-lg min-w-min bg-white border border-gray-200 rounded-lg shadow m-4">
         <a href={workHistoryObject.link} className="flex justify-center">
@@ -11,7 +11,7 @@ const WorkHistoryItem = ({workHistoryObject, index}) => {
             <h6 className="mb-2 text-lg font-bold tracking-tight text-gray-500">{workHistoryObject.position}</h6>
             <p className="mb-1 text-sm text-gray-600 min-w-[250px]">{workHistoryObject.description}</p>
         </div> 
-        <p className="px-5 py-4 text-xs font-normal text-gray-500">{workHistoryObject.startDate} - {workHistoryObject.endDate}</p>
+        <p className="px-5 py-4 text-xs font-normal text-gray-500">{formatDate(workHistoryObject.startDate)} - {formatDate(workHistoryObject.endDate)}</p>
     </div>
   );
 };

@@ -1,6 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
-const ProjectItem = ({ projectObject }) => {
+const ProjectItem = ({ projectObject, formatDate }) => {
+
+  // Commit 1: Convert dates to strings
+  // Commit 2: Fix infinite calls to server error
+  // Commit 3: Iterate through skills dynamically 
+
+  function extractSkillNames(arr) {
+    return arr.map(item => item.name);
+  }
+
+  const [skills, setSkills] = useState("")
+
+  useEffect(() => {
+    setSkills(extractSkillNames(projectObject.skills))
+  }, [projectObject.skills])
+
   return (
     <div className="max-w-lg min-w-min bg-white border border-gray-200 rounded-lg shadow m-4">
       <a href="https://www.strathmore.ac.ke/" className="flex justify-center">
@@ -14,9 +29,9 @@ const ProjectItem = ({ projectObject }) => {
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
           {projectObject.title}
         </h5>
-        {/* <h6 className="mb-2 text-lg font-bold tracking-tight text-gray-500">
-          {projectObject.skills[0]}, {projectObject.skills[1]}
-        </h6> */}
+        <h6 className="mb-2 text-lg font-bold tracking-tight text-gray-500">
+          {skills[0]}, {skills[1]}
+        </h6>
         <p className="mb-2 text-sm text-gray-600 min-w-[250px]">
           {projectObject.description}
         </p>
@@ -31,7 +46,7 @@ const ProjectItem = ({ projectObject }) => {
         </a>
       </p>
       <p className="px-5 py-4 text-xs font-normal text-gray-500">
-        {projectObject.startDate} - {projectObject.endDate}
+        {formatDate(projectObject.startDate)} - {formatDate(projectObject.endDate)}
       </p>
       <p className="mx-5 my-4 bg-blue-100 text-blue-800 text-xs font-medium w-fit px-2.5 py-0.5 rounded">
         {projectObject.openSource ? 'Open Source' : 'Closed Source'}

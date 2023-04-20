@@ -8,9 +8,18 @@ import BlogItem from './BlogItem';
 import CardPlaceholder from './CardPlaceholder'; 
 
 const ScrollableContainer = ({ projects = [], blogs = [], workHistory = [] }) => {
+
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    const year = date.getFullYear();
+    const month = date.toLocaleString('default', { month: 'long' });
+    return `${month} ${year}`;
+  }
+
+
   const renderProjects = projects.length > 0
     ? projects.map((projectObject, index) => (
-        <ProjectItem key={`project-${index}`} projectObject={projectObject} />
+        <ProjectItem formatDate={formatDate} key={`project-${index}`} projectObject={projectObject} />
       ))
     : <CardPlaceholder />;
     
@@ -22,7 +31,7 @@ const ScrollableContainer = ({ projects = [], blogs = [], workHistory = [] }) =>
     
   const renderWorkHistory = workHistory.length > 0
     ? workHistory.map((workHistoryObject, index) => (
-        <WorkHistoryItem key={`workhistory-${index}`} workHistoryObject={workHistoryObject} />
+        <WorkHistoryItem formatDate={formatDate} key={`workhistory-${index}`} workHistoryObject={workHistoryObject} />
       ))
     : <CardPlaceholder />;
 
