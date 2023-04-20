@@ -9,7 +9,7 @@ import CardPlaceholder from './CardPlaceholder';
 
 const ScrollableContainer = ({ projects = [], blogs = [], workHistory = [] }) => {
 
-  function formatDate(dateString) {
+  const formatDate = (dateString) => {
     const date = new Date(dateString);
     const year = date.getFullYear();
     const month = date.toLocaleString('default', { month: 'long' });

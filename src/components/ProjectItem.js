@@ -2,14 +2,16 @@ import React, {useState, useEffect} from 'react';
 
 const ProjectItem = ({ projectObject, formatDate }) => {
 
-  // Commit 2: Fix infinite calls to server error
-  // Commit 3: Iterate through skills dynamically 
+  const [skills, setSkills] = useState("")
 
-  function extractSkillNames(arr) {
+  const extractSkillNames = (arr) => {
     return arr.map(item => item.name);
   }
 
-  const [skills, setSkills] = useState("")
+  const listSkills = (skills) => {
+    return skills.join(', ');
+  }
+
 
   useEffect(() => {
     setSkills(extractSkillNames(projectObject.skills))
@@ -29,7 +31,7 @@ const ProjectItem = ({ projectObject, formatDate }) => {
           {projectObject.title}
         </h5>
         <h6 className="mb-2 text-lg font-bold tracking-tight text-gray-500">
-          {skills[0]}, {skills[1]}
+          {listSkills(skills)}
         </h6>
         <p className="mb-2 text-sm text-gray-600 min-w-[250px]">
           {projectObject.description}
