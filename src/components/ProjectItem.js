@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 
 const ProjectItem = ({ projectObject, formatDate }) => {
 
-  // Commit 1: Convert dates to strings
   // Commit 2: Fix infinite calls to server error
   // Commit 3: Iterate through skills dynamically 
 
