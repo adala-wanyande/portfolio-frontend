@@ -34,7 +34,7 @@ const App = () => {
   const workHistory = useFetchData("http://localhost:4000/work-history");
 
   return (
-    <div className="flex flex-col md:flex-row w-full justify-center">
+    <div className="flex flex-col md:flex-row w-full justify-center gradient">
       <StickyContainer />
       <ScrollableContainer
         projects={projects}

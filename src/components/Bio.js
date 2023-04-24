@@ -9,7 +9,7 @@ const Bio = () => {
         </h2>
       </div>
       <div className='mt-4 max-w-lg'>
-        <p className='text-gray-500 text-base'>
+        <p className='text-black text-base'>
           I'm a software developer with a strong inclination for frontend technologies, especially React. 
           I enjoy getting my hands dirty with frontend development and I have a preference for creating 
           visually appealing wireframes and mockups using Figma. There's nothing quite like the rush of 
