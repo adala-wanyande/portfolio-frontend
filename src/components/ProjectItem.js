@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 const ProjectItem = ({ projectObject, formatDate }) => {
 
-  const [skills, setSkills] = useState("")
+  const [skills, setSkills] = useState([])
 
   const extractSkillNames = (arr) => {
     return arr.map(item => item.name);
