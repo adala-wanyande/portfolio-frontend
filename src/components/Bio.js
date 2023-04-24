@@ -10,11 +10,9 @@ const Bio = () => {
       </div>
       <div className='mt-4 max-w-lg'>
         <p className='text-black text-base'>
-          I'm a software developer with a strong inclination for frontend technologies, especially React. 
-          I enjoy getting my hands dirty with frontend development and I have a preference for creating 
-          visually appealing wireframes and mockups using Figma. There's nothing quite like the rush of 
-          seeing my designs come to life through web development! As a man who's just starting out in 
-          this exciting field, I can't wait to see what the future has in store for me and my development career.
+          I'm a software developer with a strong inclination for frontend technologies. 
+          I enjoy creating tools that benefit society in one way or another and I love 
+          to see my designs come to life through web development.
         </p>
       </div>
     </div>
