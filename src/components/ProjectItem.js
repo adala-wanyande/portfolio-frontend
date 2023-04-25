@@ -19,7 +19,7 @@ const ProjectItem = ({ projectObject, formatDate }) => {
 
   return (
     <div className="max-w-lg min-w-min bg-white border border-gray-200 rounded-lg shadow m-4">
-      <a href="https://www.strathmore.ac.ke/" className="flex justify-center">
+      <a href={projectObject.githubLink} className="flex justify-center">
         <img
           className="w-[300px] h-[150px] mt-4"
           src={require(`../${projectObject.coverImage}`)}
