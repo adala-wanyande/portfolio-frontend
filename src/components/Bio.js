@@ -12,7 +12,10 @@ const Bio = () => {
         <p className='text-black text-base'>
           I'm a software developer with a strong inclination for frontend technologies. 
           I enjoy creating tools that benefit society in one way or another and I love 
-          to see my designs come to life through web development.
+          to see my designs come to life through web development. I believe that we are 
+          all creators and that we can all contribute to the betterment of society through
+          our creations. I'm currently looking for opportunities to work with a team of
+          like-minded individuals to create amazing products.
         </p>
       </div>
     </div>
